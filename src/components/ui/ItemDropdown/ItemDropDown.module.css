@@ -1,0 +1,14 @@
+.acordionContainer {
+  width: 14vw;
+}
+.singleItem {
+  width: 14vw;
+  height: 6vh;
+}
+.singleItem:hover {
+  cursor: pointer;
+}
+.itemAccordion:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

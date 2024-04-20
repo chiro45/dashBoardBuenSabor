@@ -1,0 +1,28 @@
+.containerSidebar {
+  height: 100vh;
+  background-color: #f9f5f0;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.containerNameSidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  font-size: 1.5rem;
+}
+.containerItemsSidebar {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.containerCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vh;
+}

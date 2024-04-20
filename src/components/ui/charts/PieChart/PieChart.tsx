@@ -6,11 +6,11 @@ import { FC } from "react";
 interface IPieChart {
   width?: number;
   heigth?: number;
-  text?: string;
+  title?: string;
   dataIn?: any;
 }
 
-export const PieChart: FC<IPieChart> = ({ width, heigth, text }) => {
+export const PieChart: FC<IPieChart> = ({ width, heigth, title }) => {
   // Datos para el gráfico
   const data =
     {
@@ -52,7 +52,7 @@ export const PieChart: FC<IPieChart> = ({ width, heigth, text }) => {
       className={styles.container__pieChart}
       style={{ width: `${width || 40}vw`, height: `${heigth || 40}vh` }}
     >
-      <h2>{text || "Inserte un titulo"}</h2>
+      <h2>{title || "Inserte un titulo"}</h2>
       <Pie data={data} options={options} />
     </div>
   );

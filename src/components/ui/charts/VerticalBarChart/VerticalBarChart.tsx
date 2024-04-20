@@ -4,13 +4,13 @@ import styles from "./VerticalBarChart.module.css";
 interface IVerticalBarChart {
   width?: number;
   heigth?: number;
-  text?: string;
+  title?: string;
   dataIn?: any;
 }
 export const VerticalBarChart: FC<IVerticalBarChart> = ({
   width,
   heigth,
-  text,
+  title,
 }) => {
   // Datos para el gráfico
   const data = {
@@ -53,7 +53,7 @@ export const VerticalBarChart: FC<IVerticalBarChart> = ({
       className={styles.container__BarChart}
       style={{ width: `${width || 40}vw`, height: `${heigth || 40}vh` }}
     >
-      <h2>{text || "Inserte un titulo"}</h2>
+      <h2>{title || "Inserte un titulo"}</h2>
       <Bar data={data} options={options} />
     </div>
   );

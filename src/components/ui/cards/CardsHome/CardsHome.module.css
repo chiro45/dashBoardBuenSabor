@@ -1,0 +1,22 @@
+.containerCardsHome {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #797878;
+  border-radius: 0.4rem;
+  width: 18vw;
+  padding: 0.6rem;
+  height: 100%;
+}
+.title__CardsHome {
+  width: 90%;
+}
+.actions__CardsHome {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
