@@ -12,26 +12,39 @@ export const Sidebar = () => {
           <p style={{ color: "gray" }}>Dashboards</p>
         </div>
         <div className={styles.containerCategories}>
-          <ItemDropdown icon="incomplete_circle" title="Inicio" />
-          <ItemDropdown icon="shopping_bag" title="Productos" />
-          <ItemDropdown icon="sell" title="Promociones" />
-          <ItemDropdown icon="folder" title="Empresa" />
-          <ItemDropdown icon="group" title="Usuarios" />
+          <ItemDropdown routeBase="/" icon="incomplete_circle" title="Inicio" />
+          <ItemDropdown
+            routeBase="/products"
+            icon="shopping_bag"
+            title="Productos"
+          />
+          <ItemDropdown
+            routeBase="/promotions"
+            icon="sell"
+            title="Promociones"
+          />
+          <ItemDropdown routeBase="/company" icon="folder" title="Empresa" />
+          <ItemDropdown routeBase="/users" icon="group" title="Usuarios" />
           <ItemDropdown
             icon="shopping_bag"
             title="Categorias"
+            routeBase="/categories"
             arrItemsIn={[
               {
                 text: "Bebida",
+                route: "drins",
               },
               {
                 text: "Comida",
+                route: "food",
               },
               {
                 text: "Postre",
+                route: "dessert",
               },
               {
                 text: "Otro",
+                route: "other",
               },
             ]}
           />

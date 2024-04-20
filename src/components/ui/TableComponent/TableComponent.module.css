@@ -1,0 +1,21 @@
+.containerTablePrincipal {
+  width: 100%;
+  max-height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.containerTable {
+  width: 80%;
+  overflow-y: auto;
+  background-color: #ccc;
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+}
+.actions span:hover {
+  cursor: pointer;
+  color: #ccc;
+}
