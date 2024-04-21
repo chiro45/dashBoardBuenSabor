@@ -5,7 +5,7 @@ export const Sidebar = () => {
     <div className={styles.containerSidebar}>
       <div className={styles.containerNameSidebar}>
         <span className="material-symbols-outlined">account_circle </span>
-        <span>Pollos Hermanos</span>
+        <span>Buen Sabor</span>
       </div>
       <div className={styles.containerItemsSidebar}>
         <div>
