@@ -4,7 +4,12 @@ import styles from "./Company.module.css";
 import { CardsCompany } from "../../ui/cards/CardsCompany/CardsCompany";
 
 export const Company = () => {
-  const dataCompany = [{}, {}, {}, {}, {}, {}, {}, {}];
+  const companies = [
+    { name: "Empresa A", ubication: "Ciudad X", puntutation: 2.5 },
+    { name: "Empresa B", ubication: "Ciudad Y", puntutation: 3.5 },
+    { name: "Empresa C", ubication: "Ciudad Z", puntutation: 2.5 },
+    { name: "Empresa D", ubication: "Ciudad W", puntutation: 4.5 },
+  ];
   return (
     <div>
       <NavBar title={"Empresa"} />
@@ -59,8 +64,13 @@ export const Company = () => {
       </div>
       <div className="d-flex justify-content-center">
         <div className={styles.containerCards}>
-          {dataCompany.map((el) => (
-            <CardsCompany />
+          {companies.map((el) => (
+            <CardsCompany
+              ubication={el.ubication}
+              puntuation={el.puntutation}
+              name={el.name}
+              key={el.name}
+            />
           ))}
         </div>
       </div>

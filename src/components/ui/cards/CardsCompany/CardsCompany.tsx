@@ -1,12 +1,17 @@
+import { FC } from "react";
 import styles from "./CardsCompany.module.css";
 
-export const CardsCompany = () => {
-  const company = {
-    nombre: "Compañia 1",
-    ubicacion: "San Juan 1223",
-    puntuation: 1,
-  };
+interface ICardsCompany {
+  name: string;
+  ubication: string;
+  puntuation: number;
+}
 
+export const CardsCompany: FC<ICardsCompany> = ({
+  name,
+  ubication,
+  puntuation,
+}) => {
   const renderStars = () => {
     return (
       <div className="d-flex justify-content-start align-items-center">
@@ -23,18 +28,14 @@ export const CardsCompany = () => {
   };
 
   const getStarStyle = (index: number) => {
-    const rating = company.puntuation;
-    const roundedRating = Math.round(rating); // Redondea la calificación a la más cercana
-    const hasHalfStar =
-      rating - roundedRating >= 0.25 && rating - roundedRating <= 0.75; // Verifica si hay media estrella
+    const rating = puntuation;
 
-    if (index < roundedRating) {
+    if (rating >= index + 1) {
       return { color: "gold" }; // Estrella llena
-    } else if (index === roundedRating && hasHalfStar) {
+    } else if (rating >= index + 0.5) {
       return {
         color: "gold",
-        clipPath:
-          "polygon(50% 0%, 100% 0%, 100% 100%, 50% 70%, 0% 100%, 0% 0%)",
+        clipPath: "polygon(50% 0%, 100% 38%, 75% 100%, 25% 100%, 0% 38%)", // Define el clipPath para media estrella
       }; // Media estrella
     } else {
       return { color: "lightgray" }; // Estrella vacía
@@ -45,13 +46,13 @@ export const CardsCompany = () => {
     <div className={styles.containerCardCompany}>
       <div className={styles.containerInformation}>
         <div>
-          <h3>Sucursal</h3>
+          <h3>{name}</h3>
           <p className="d-flex justify-content-start">
             <span className="material-symbols-outlined">edit</span>Editar
           </p>
           <p className="d-flex justify-content-start">
             <span className="material-symbols-outlined">home_pin</span>
-            Ubicacion
+            {ubication}
           </p>
         </div>
         {renderStars()}

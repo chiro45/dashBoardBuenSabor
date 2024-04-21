@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #797878;
+  background-color: var(--itemsColor);
   border-radius: 0.4rem;
   width: 18vw;
   padding: 0.6rem;

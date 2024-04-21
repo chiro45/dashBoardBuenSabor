@@ -1,6 +1,6 @@
 .containerSidebar {
   height: 100vh;
-  background-color: #f9f5f0;
+  background-color: var(--secondaryColor);
   width: 15vw;
   display: flex;
   justify-content: center;

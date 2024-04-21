@@ -1,12 +1,19 @@
+:root {
+  --primaryColor: #49111c;
+  --secondaryColor: #f9f5f0;
+  --backGroundColor: #e8e8e8;
+  --itemsColor: #797878;
+}
+
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
   width: 0.4rem;
-  background-color: #f0f0f0; /* Color de fondo */
+  background-color: var(--secondaryColor); /* Color de fondo */
   border-radius: 0.4rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #888; /* Color del pulgar */
+  background-color: var(--itemsColor); /* Color del pulgar */
   border-radius: 0.5rem;
 }
 
