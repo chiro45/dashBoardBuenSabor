@@ -1,15 +1,13 @@
 .containerTablePrincipal {
   width: 100%;
-  max-height: 70vh;
+  max-height: 78vh;
   display: flex;
   position: relative;
   justify-content: center;
 }
 .containerTable {
-  width: 80%;
+  width: 98%;
   overflow-y: auto;
-  background-color: #ccc;
-  border-radius: 0.4rem;
   padding: 0.4rem;
 }
 .actions {
@@ -20,9 +18,8 @@
   cursor: pointer;
   color: #ccc;
 }
-thead {
+.tHeadStyle {
   position: sticky;
   top: 0;
   z-index: 1;
 }
-

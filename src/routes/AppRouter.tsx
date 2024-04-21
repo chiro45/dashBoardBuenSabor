@@ -6,6 +6,7 @@ import { Products } from "../components/screens/Products/Products";
 import { Users } from "../components/screens/Users/Users";
 import { Categories } from "../components/screens/Categories/Categories";
 import { Sidebar } from "../components/ui/SIdebar/Sidebar";
+import { Company } from "../components/screens/Company/Company";
 
 // Definición del componente AppRouter
 export const AppRouter = () => {
@@ -25,7 +26,7 @@ export const AppRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/promotions" element={<Home />} />
-        <Route path="/company" element={<Home />} />
+        <Route path="/company" element={<Company />} />
         <Route path="/users" element={<Users />} />
         <Route path="/categories/:category" element={<Categories />} />
       </Routes>

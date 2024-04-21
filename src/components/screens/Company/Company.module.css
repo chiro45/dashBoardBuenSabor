@@ -1,0 +1,31 @@
+.titleCompany {
+  color: #49111c;
+  font-weight: 700;
+  font-size: 5vh;
+}
+.subTitleCompany {
+  color: #5e503f;
+  font-weight: 500;
+  font-size: 5vh;
+}
+
+.buttons {
+  height: 8vh;
+  width: 8vh;
+  background-color: #49111c;
+  border: none;
+}
+.buttonsBody {
+  height: 10vh;
+  width: 10vh;
+  background-color: #49111c;
+  border: none;
+}
+.containerCards {
+  width: 98%;
+  max-height: 60vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2vh;
+}

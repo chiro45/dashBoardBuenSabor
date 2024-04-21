@@ -8,7 +8,7 @@ export const TableComponent = ({ headerData, tableData }: any) => {
     <div className={styles.containerTablePrincipal}>
       <div className={styles.containerTable}>
         <Table bordered striped hover style={{ cursor: "pointer" }}>
-          <thead>
+          <thead className={styles.tHeadStyle}>
             <tr>
               {headerData.map((el: any) => (
                 <th key={el.label}>{el.label}</th>
