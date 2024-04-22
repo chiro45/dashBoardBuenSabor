@@ -12,3 +12,9 @@
   cursor: pointer;
   text-decoration: underline;
 }
+.itemAccordionActive {
+  text-decoration: underline;
+}
+.itemActive {
+  background-color: #cfe2ff;
+}
